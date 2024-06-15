@@ -15,12 +15,26 @@
   <main class="main-content">
     <div class="page container">
       <h2 class="page-title">Our Pricing</h2>
-      <div class="switch">Switch</div>
+      <form class="pricing-switch" action="https://echo.htmlacademy.ru" method="get">
+        <div class="switch">
+          <input class="switch-input-anual visuallyhidden" type="radio" name="payment_period" value="anual" id="anual-payment-radio">
+          <input class="switch-input-monthly visuallyhidden" type="radio" name="payment_period" value="monthly" id="monthly-payment-radio" checked>
+          <label class="switch-label" for="anual-payment-radio">Anually</label>
+          <div class="switch-control">
+            <div class="switch-circle"></div>
+            <label class="switch-control-anual" for="anual-payment-radio"></label>
+            <label class="switch-control-monthly" for="monthly-payment-radio"></label>
+          </div>
+          <label class="switch-label" for="monthly-payment-radio">Monthly</label>
+        </div>
+      </form>
+
+
       <div class="pricing0">
         <section class="pricing">
           <h3 class="pricing-heading">Basic</h3>
           <span class="price">$</span>
-          <span class="price">19.99</span>
+          <span class="price pricing-plan-value">19.99</span>
           <ul class="pricing-list">
             <li class="pricing-item">500 GB Storage</li>
             <li class="pricing-item">2 Users Allowed</li>
@@ -31,7 +45,7 @@
         <section class="pricing pricing-professional">
           <h3 class="pricing-heading pricing-heading-professional">Professional</h3>
           <span class="price price-professional">$</span>
-          <span class="price price-professional">24.99</span>
+          <span class="price price-professional pricing-plan-value">24.99</span>
           <ul class="pricing-list pricing-list-professional">
             <li class="pricing-item pricing-item-professional">1 TB Storage</li>
             <li class="pricing-item pricing-item-professional">5 Users Allowed</li>
@@ -40,10 +54,10 @@
           <a class="learn-more learn-more-professional" href="#">LEARN MORE</a>
         </section>
         <section class="pricing pricing-master">
-          <h3 class="pricing-heading">Basic</h3>
+          <h3 class="pricing-heading">Master</h3>
           <div class="narx">
             <span class="price">$</span>
-            <span class="price">19.99</span>
+            <span class="price pricing-plan-value">19.99</span>
           </div>
           <ul class="pricing-list">
             <li class="pricing-item">2 TB Storage</li>
